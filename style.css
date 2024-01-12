@@ -1,0 +1,293 @@
+body{
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-right: 0px;
+    padding-left: 0px;
+    
+}
+.text{
+    color: currentColor;
+    background-color: cyan;
+    text-align: center;
+    align-content: center;
+}
+.menu{
+    width: 100%;
+    height: 60px;
+    background-color: rgb(184, 143, 188);
+}
+.menu li{
+    list-style: none;
+    width: 160px;
+    height: 60px;
+    background-color: rgb(184, 143, 188);
+    margin-left: 40px;
+    text-align: center;
+    line-height: 60px;
+    float: left;
+}
+.menu li:hover{
+    background-color: black;
+}
+.menu li a:hover{
+    color: aqua;
+}
+.menu li a{
+    color: white;
+    display: block;
+    text-decoration: none;
+}
+.logo{
+    width: 60px;
+}
+.logo_li:hover{
+    background-color: rgb(184, 143, 188)!important;
+}
+.logo_li a{
+    font-size: 20px;
+    background-color: orangered;
+}
+.logo_li a:hover{
+    color: white!important;
+}
+#act{
+    float: none;
+    width: 100%;
+    margin: 0%;
+    z-index: 3;
+    position: relative;
+}
+.menu ul{
+    display: none;
+}
+.menu li:hover ul{
+    display: block;
+}
+#banner{
+    width: 100%;
+    z-index: 1;
+
+}
+#banner img{
+    margin-top: 40px;
+    width: 100%;
+    height: 780px;
+}
+#why_choose{
+    width: 100%;
+    text-align: center;
+}
+#why_choose h1{
+    margin: 0 auto;
+    width: 300px;
+    font-size: 30px;
+    color: red;
+    border-bottom: 2px solid red;
+    border-bottom-width: 5px;
+}
+.div_section1{
+    width: 20%;
+    height: 400px;
+    margin: 30px;
+    border: 1px solid blueviolet;
+    float: left;
+}
+.icon{
+    width: 120px;
+    height: 120px;
+    font-size:80px;
+    border: 1px solid gray;
+    margin: 10px auto;
+    line-height: 120px;
+    background-color: chocolate;
+    border-radius: 100px;
+    transition-duration: 0.3s;
+}
+.icon:hover{
+    font-size: 40px;
+}
+/* sectio 2*/
+.div_section2{
+    width: 20%;
+    height: 400px;
+    margin: 30px;
+    border: 1px solid white;
+    float: left;
+}
+.symbol{
+    width: 120px;
+    height: 120px;
+    font-size: 80px;
+    border: 1px solid gray;
+    margin: 10px auto;
+    line-height: 120px;
+    background-color: gold;
+    border-radius: 100px;
+    transition-duration: 0.3s;
+}
+/*FOOTER*/
+.footer{
+    width: 1600px;
+    height: 400px;
+    margin-top:500px;
+    background-color: black;
+
+}
+.footer_div{
+    width: 10%;
+    height: auto;
+    margin: 100px;
+    border: 1px solid black;
+    float: left;
+}
+.footer_div h1{
+    color: chartreuse;
+}
+.footer_div p{
+    color: white;
+}
+.footer_div button{
+    margin-top: 0px;
+    background-color: cyan;
+    border: none;
+    width: 120px;
+    height: 40px;
+}
+.footer_div ul li a{
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: bold;
+}
+.social_link button{
+    margin-top: 0px;
+    background-color: darkkhaki;
+    border: white;
+    width: 100px;
+    height: 40px;
+}
+@media (min-width:300px) and (max-width:600px){
+    .menu{
+        width: 50%;
+        height: 50px;
+        background-color: rgb(184, 143, 188);
+    }
+    .menu li{
+        list-style: none;
+        width: 200px;
+        height: 50px;
+        background-color: rgb(184, 143, 188);
+        margin-left: 5px;
+        text-align: center;
+        line-height: 40px;
+    }
+    #banner{
+        width: 100%;
+        z-index: 1;
+    
+    }
+    #banner img{
+        margin-top: 60px;
+        width: 100%;
+        /* height: 580px; */
+    }
+    #why_choose{
+        width: 100%;
+        text-align: center;
+    }
+    #why_choose h1{
+        margin: 0 auto;
+        width: 200px;
+        font-size: 30px;
+        color: red;
+        border-bottom: 2px solid red;
+        border-bottom-width: 5px;
+    }
+    .div_section1{
+        width: 90%;
+        height: 250px;
+        margin: 5px;
+        border: 1px solid white;
+        float: left;
+    }
+    .icon{
+        width: 50px;
+        height: 50px;
+        font-size:30px;
+        border: 1px solid gray;
+        margin: 5px auto;
+        line-height: 50px;
+        background-color: chocolate;
+        border-radius: 100px;
+        transition-duration: 0.3s;
+    }
+    #why_choose{
+        width: 100%;
+        text-align: center;
+    }
+    #why_choose h1{
+        margin: 0 auto;
+        width: 200px;
+        font-size: 30px;
+        color: red;
+        border-bottom: 2px solid red;
+        border-bottom-width: 5px;
+    }
+    .div_section2{
+        width: 90%;
+        height: 240px;
+        margin: 5px;
+        border: 1px solid white;
+        float: left;
+    }
+    .symbol{
+        width: 50px;
+        height: 50px;
+        font-size:30px;
+        border: 1px solid gray;
+        margin: 5px auto;
+        line-height: 50px;
+        background-color: gold;
+        border-radius: 100px;
+        transition-duration: 0.3s;
+    }
+    .footer{
+        width: 450px;
+        margin-top:0px;
+        height: 1000px;
+        margin-top:1100px;
+        background-color: black;
+    
+    }
+    .footer_div{
+        width: 10%;
+        height: auto;
+        margin: 55px;
+        border: 3px solid black;
+        float: left;
+    }
+    .footer_div p{
+        color: white;
+        font-size: 15px;
+    }
+    .footer_div button{
+        margin-top: 0px;
+        background-color: cyan;
+        border: none;
+        width: 120px;
+        height: 40px;
+    }
+    .footer_div ul li a{
+        color: white;
+        font-size: 15px;
+        text-decoration: none;
+        font-weight: bold;
+    }
+    .social_link button{
+        margin-top: 0px;
+        background-color: darkkhaki;
+        border: white;
+        width: 100px;
+        height: 40px;
+    }
+}

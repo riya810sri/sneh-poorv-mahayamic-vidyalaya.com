@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Enrollment Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    
+    form {
+      background-color:lightpink;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      width: 600px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 8px;
+    }
+
+    input, select {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 12px;
+      box-sizing: border-box;
+    }
+
+    button {
+      width: 100%;
+      background-color: #4caf50;
+      color:white;
+      padding: 10px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      margin-bottom: 10px;
+    }
+    .bt{
+      width: 100%;
+      background-color: red;
+      color:white;
+      padding: 10px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+    @media (min-width:300px) and (
+      max-width:600px){
+        
+    form {
+      background-color:lightpink;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      width: 400px;
+    }
+      }
+  </style>
+</head>
+<body background="riya1.png">
+<div id="enrollmentForm">
+  <h3 style="text-align: top;"><font size="7" color="red" face="algerian">Student Enrollment Form</font></h3>
+  <hr align="center" color="red">
+  <form autocomplete="off" method="POST" name="google-sheet">
+    <label for="Name">Full Name:</label>
+    <input type="text" placeholder="enter your full name" id="Name" name="Name" required>
+
+    <label for="age">Age:</label>
+    <select id="age" name="Age" required>
+      <option value="age">choose your age</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      <option value="6">6</option>
+      <option value="7">7</option>
+      <option value="8">8</option>
+      <option value="9">9</option>
+      <option value="10">10</option>
+      <option value="11">11</option>
+      <option value="12">12</option>
+      <option value="13">13</option>
+      <option value="14">14</option>
+      <option value="15">15</option>
+    </select>
+
+    <label for="grade">Grade:</label>
+    <select id="grade/class"  name="Grade/Class" required>
+        <option value="grade">select your Grade/class</option>
+        <option value="PG">PG</option>
+        <option value="PNC">PNC</option>
+        <option value="NC">NC</option>
+        <option value="KG">KG</option>
+        <option value="1">Grade 1</option>
+        <option value="2">Grade 2</option>
+        <option value="3">Grade 3</option>
+        <option value="4">Grade 4</option>
+        <option value="5">Grade 5</option>
+        <option value="6">Grade 6</option>
+        <option value="7">Grade 7</option>
+        <option value="8">Grade 8</option>
+
+      <!-- Add more grade options as needed -->
+
+    </select>
+    <label for="Mobile">Full Name:</label>
+    <input type="text" placeholder="enter your mobile no" id="Name" name="Mobile" required>
+
+    <label for="parentEmail">Parent's Email:</label>
+    <input type="email" placeholder="Enter ur parent's Email" id="parentEmail" name="ParentEmail" required>
+
+    <label for="gender">Gender:</label>
+    <select id="gender" name="Gender" required>
+      <option value="gender">gender</option>
+      <option value="male">MALE</option>
+      <option value="female">FEMALE</option>
+    </select>  
+    <button type="submit" name="submit">Send</button>
+  </form>
+</div>
+  <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbxeb1LVaTULtPVY5P2znjajjPGWRsmkgb_dyA2tyhkg5pb1uXhaN_aUGy0iSbku96m0/exec'
+            const form = document.forms['google-sheet']
+          
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => alert('Form submitted successfully!'))
+                .catch(error => console.error('Error!', error.message))
+            })
+
+          </script>
+    
+
+</body>
+</html>
